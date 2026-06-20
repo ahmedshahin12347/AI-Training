@@ -1,5 +1,5 @@
 class Student : 
-
+    """A class to represent a student with their name and grades in different subjects."""
     def __init__(self,name: str,grades: dict):
         self.name=name
         self.grades=grades
@@ -16,6 +16,7 @@ class Student :
         print(f"The average of the result for student {self.name} is : {average}")
 
     def print_info(self):
+        """Print the student's Details including name, grades, and average."""
         print(f"The student name : {self.name}")
         print(f"The grades in subjects is : {self.grades}")
         print(f"The average of the result is : {sum(self.grades.values())/len(self.grades)}")
